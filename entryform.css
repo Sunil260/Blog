@@ -1,0 +1,27 @@
+.container-form{
+padding-block: 2rem;
+
+text-align: center;
+
+display: grid;
+width: min(95%,70rem);
+margin-inline: auto;
+gap:1.5rem;
+grid-template-columns: 1fr;
+
+}
+
+[class*= 'col']{
+    padding: 1rem;
+   
+    
+    color: rgb(0, 0, 0);
+    text-align:center;
+}
+[class*= 'row']{
+    padding: 1rem;
+    
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}

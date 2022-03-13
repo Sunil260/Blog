@@ -1,0 +1,208 @@
+.bg-main {
+  background-color: #9b8dff;
+  color: #fff;
+}
+
+.my-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #9b8dff;
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+.main-page {
+    /* make sure to cover the screen */
+    min-height: 100vh;
+  
+    /* need a solid bg to hide the footer */
+    background: white;
+  
+    /* put on top */
+    position: relative;
+    z-index: 1;
+  
+    font: 16px/1.4 system-ui, sans-serif;
+    padding: 2rem;
+  }
+
+  .p-animate {
+    animation-duration: 3s;
+    animation-name:slideup;
+  }
+  
+  @keyframes slideup {
+    from {
+      margin-bottom: 100%;
+      height: 20%;
+    }
+  
+    to {
+      margin-bottom: 0%;
+      height: 50%;
+    }
+  }
+
+  .masthead{
+      background-size: cover;
+      min-height:40vh;
+      position: relative;
+      color:white;
+      text-shadow: 2px 2px 2px rgba(o,o,o,0.2);
+  }
+
+  .color-overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #7269bdb2;
+  }
+  @media(max-width:768px){
+      .masthead{
+          min-height: 30vh;
+
+      }
+      .font-size-headliner{
+          font-size: calc(1.525rem +3.3vw);
+      }
+  }
+  .body-txt-family{
+      font-family: sans-serif;
+  }
+  
+  container > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 50px;
+  }
+
+  .title{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  form div input [ type="checkbox"]>{
+    width: 40%;
+    size: 2rem;
+    height: 40%;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+
+  }
+  form div input[type="text"], input[type="password"] , input[type="email"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    display: block;
+    width: 100%;
+   
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+   
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+  }
+
+  .center-input{
+    justify-content: center;
+  }
+  
+  form div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border: 2px solid #916ef2;
+  }
+
+  form div i {
+    position: absolute;
+    padding: 10px;
+  }
+  
+  .valid-feedback,
+  .invalid-feedback {
+    right: 0;
+    opacity: 1;
+  }
+  
+  .invalid-feedback,
+  .error {
+    color: red;
+   
+  }
+  
+  .valid-feedback {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+
+div button {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: #966ef2;
+  border: 2px solid #ba9cffa9;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/**
+* ! Media Queries are here
+**/
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+}
